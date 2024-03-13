@@ -1,0 +1,142 @@
+/* Entête */
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	min-width: 800px;
+	position: sticky;
+	top: 0;
+	background-color: #A0A0A0;
+	box-shadow: 0 1px 5px black;
+	z-index: 1;
+}
+
+/* Logo dans le nav */
+.logo a {
+	text-decoration: none;
+	color: black;
+}
+.logo a, nav, .onglets {
+	display: flex;
+}
+.logo img {
+	margin: 10px;
+}
+.logo h1 {
+	margin: auto 10px;
+}
+
+/* Onglets */
+.onglets a, #chapitres a {
+	transition: .5s;
+	text-decoration: none;
+	color: black;
+	padding: 22.5px 10px;
+}
+.onglets a:hover, #chapitres a:hover {
+	background-color: #B0B0B0;
+}
+
+/* L'onglet actuel est différencié des autres */
+a.onglet-actuel {
+	background-color: #909090;
+}
+a.onglet-actuel:hover {
+	background-color: #787878;
+}
+
+/* Liste des chapitres */
+#chapitres {
+	position: absolute;
+	top: -85px;
+	right: 0;
+	opacity: 0;
+	background-color: #777575;
+	/*background-color: #A0A0A0;*/
+	transition: 0.5s;
+	display: flex;
+	box-shadow: 0 1px 3px black;
+}
+#chapitres a {
+	padding: 10px;
+	text-align: center;
+	border: 1px grey solid;
+}
+#chapitres a:hover {
+	background-color: grey;
+}
+#chapitre {
+	cursor: pointer;
+	user-select: none;
+}
+
+
+/* Pied de page */
+footer {
+	color: #fff;
+	background-color: #9E9E9E;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+footer img {
+	margin: 10px;
+	border-radius: 3%;
+}
+.auteurs {
+	display: flex;
+	align-items: center;
+}
+.hebergeur a {
+	text-decoration: none;
+	color: #fff;
+}
+.hebergeur a:hover {
+	text-decoration: underline;
+	color: #DADADA;	
+}
+
+
+
+/* Style ordinateur */
+@media screen and (min-width: 800px) {
+	/* Pied de page */
+	footer h1 {
+		font-size: 1em;
+		margin: 10px;
+	}
+}
+
+
+
+/* Style mobile */
+@media screen and (max-width: 800px) {
+	/* Pied de page */
+	footer {
+		flex-flow: column;
+		padding-bottom: 20px;
+	}
+	footer h1 {
+		font-size: 0.87em;
+		margin: 5px;
+	}
+	.hebergeur, .auteurs {
+		font-size: 1.5em;
+	}
+}
+
+
+
+/* Contact */
+.sitographie form {
+	display: flex;
+	flex-direction: column;
+	color: grey;
+}
+.sitographie input {
+	margin-top: 15px;
+}
+.sitographie input {
+	margin-top: 15px;
+}

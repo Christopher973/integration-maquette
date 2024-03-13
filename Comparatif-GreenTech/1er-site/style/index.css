@@ -1,0 +1,204 @@
+/* Style ordinateur */
+@media screen and (min-width: 800px) {
+	body {
+		min-width: 800px;
+		max-width: 2500px;
+	}
+
+	/* Titre */
+	hr {
+		margin: 5vh 200px 2vh 200px;
+	}
+	.titre {
+		font-size: 2em;
+	}
+	.texte {
+		font-size: 1.4em;
+		padding: 50px;
+	}
+	.entreprise {
+		margin: 0 100px;
+		margin-bottom: 100px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.entreprise a {
+		width: 50%;
+	}
+	.entreprise img {
+		width: 80%;
+		height: 80%;
+	}
+
+
+	/* Comparatif */
+	.comparatif {
+		font-size: 1.15em;
+	}
+	#agreen, #naio, #conclusion {
+		padding: 5vh 2.5vw;
+	}
+	.comparatif p {
+		margin: 0 2.5vw;
+	}
+
+
+
+	/* Sitographie */
+	.sitographie {
+		padding: 30px;
+	}
+}
+
+
+
+
+
+/* Style mobile */
+@media screen and (max-width: 800px) {
+	body {
+		min-width: 800px;
+	}
+
+
+	/* Index */
+	hr {
+		margin: 5vh;
+	}
+	.titre {
+		font-size: 1.5em;
+	}
+	.texte {
+		padding: 5vh;
+		font-size: 1.3em;
+	}
+
+
+	/* Comparatif */
+	.comparatif {
+		font-size: 1.5em;
+	}
+	#agreen, #naio, #conclusion {
+		padding: 5vh 5vw;
+	}
+
+
+	/* Sitographie */
+	.sitographie {
+		padding: 3vw;
+		font-size: 1.5em;
+	}
+}
+
+
+
+
+
+/* Style partagé */
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: auto;
+	font-family: 'Noto Serif';
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/fonds/fond-vert.webp);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+
+/* Index */
+hr {
+	border: 1px solid #fff;
+}
+main.index {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.titre {
+	margin: 5vh;
+}
+.titre, .entreprise h1 {
+	color: #FAD24C;
+}
+.texte {
+	margin: 5vh;
+	background: linear-gradient(#918E8EAA, #918E8EAA);
+	border-radius: 15px;
+}
+.texte p {
+	text-align: justify;
+}
+.entreprise a {
+	color: #fff;
+	text-decoration: none;
+}
+.entreprise img {
+	border-radius: 15px;
+}
+
+
+/* Comparatif */
+.comparaison {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 5vw;
+}
+#naio, #agreen {
+	width: 50%;
+}
+#agreen {
+	margin-right: 2.5vw;
+}
+.comparatif h1, .comparatif h2, .comparatif h3, .comparatif h4 {
+	color: #FAD24C;
+	text-align: center;
+}
+.comparatif h1 {
+	padding: 2.5vh;
+}
+.comparatif h3 {
+	padding-top: 20px;
+}
+.comparatif h4 {
+	padding-top: 10px;
+}
+.comparatif p {
+	text-align: justify;
+}
+#agreen, #naio, #conclusion {
+	background: linear-gradient(#918E8EBB, #918E8EBB);
+	border-radius: 15px;
+}
+#agreen h2, #naio h2 {
+	margin: 0;
+}
+#conclusion {
+	margin: 5vh 5vw;
+}
+#conclusion h1 {
+	padding: 0;
+}
+#conclusion p {
+	padding: 20px;
+}
+
+
+/* Sitographie */
+.sitographie {
+	margin: 0;
+	text-align: left;
+	color: #fff;
+}
+.sitographie h1 {
+	padding: 20px 0;
+	color: #FAD24C;
+}
+.sitographie a {
+	color: #fff;
+}
+.sitographie a:hover {
+	text-decoration: none;
+	color: #fff;
+}

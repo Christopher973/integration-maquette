@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(107.15deg, #222121 0%, #3F3A33 44.27%, #7C541C 88.02%, #AB6D10 100%);
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 100px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.button{
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #F5901A;
+    border: 2px solid #F5901A;
+    border-radius: 50px;
+    transition: background .3s ease;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: transparent;
+}
+
+.navlogo{
+    font-family: 'Leckerli One', cursive;
+    color: #fff;
+    font-size: 32px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navbar a{
+    position: relative;
+    color: #fff;
+}
+
+.navbar a.active::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 100%;
+    height: 2.5px;
+    background-color: #FF7D15;
+    transition: width 0.25s ease-out;
+}
+
+.navbar a::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 0;
+    height: 2.5px;
+    background-color: #FF7D15;
+    transition: width 0.25s ease-out;
+}
+
+.navbar a:hover::before{
+    content: "";
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+main{
+    position: relative;
+    display: flex;
+    align-items: center ;
+}
+
+.left{
+    width: 800px;
+    padding-top: 150px;
+}
+
+.title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links .img{
+    padding-left: 30px;
+}
+
+.img{
+    align-items: center;
+    display: flex;
+}
+
+.img span{
+    padding-left: 10px;
+    color: #AFAFAF;
+}
+
+.social{
+    padding-top: 200px;
+    display: flex;
+    color: #AFAFAF;
+}
+
+.social .img{
+    padding-right: 20px;
+}
+
+.social span{
+    color: #fff;
+    font-weight: 500;
+    
+}
+.right img{
+    position: absolute;
+    top: 58px;
+    right: -100px;
+    width: 489px;
+    height: 590px;
+}

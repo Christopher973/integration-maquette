@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+main video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+}
+
+header {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 20px 0 0 0;
+}
+
+.logo {
+    margin: 0 0 0 120px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    padding-bottom: 0.35rem;
+}
+
+.navbar ul li a {
+    color: #000;
+    position: relative;
+}
+
+.navbar ul li a::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #226A80;
+    transition: width 0.25s ease-out;
+}
+
+.navbar ul li a:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.content {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.text {
+    margin: 120px 0 0 120px;
+    max-width: 800px;
+}
+
+.content .text h1 {
+    color: #226A80;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.content .text h1 span {
+    font-weight: 600;
+    color: #fff;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.media {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 330px;
+    padding-top: 100px;
+}
+
+.media a {
+    color: #000;
+    margin-top: 10px;
+    transition: all .3s ease;
+    transition-property: transform;
+}
+
+.media a:hover {
+    transform: scale(1.5);
+}
+
+.text p {
+    margin-bottom: 40px;
+}
+
+.text .info-btn {
+    color: #fff;
+    background: #226A80;
+    padding: 15px 30px 15px 30px;
+    border-radius: 20px;
+    transition: all .3s ease-out;
+}
+
+.text .info-btn:hover {
+    background: #2A7389;
+}
+
+@media (max-width: 1028px) {
+    header {
+        max-width: 950px;
+    }
+    .text {
+        max-width: 800px;
+    }
+    .media {
+        padding-left: 60px;
+    }
+}
+
+@media (max-width: 950px) {
+    .navbar {
+        display: none;
+    }
+    .text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    .media {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 740px) {
+    .text p {
+        padding-right: 40px;
+    }
+    .content .text h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .text p {
+        padding-right: 50px;
+        font-size: 12px;
+    }
+    .content .text h1 {
+        font-size: 35px;
+    }
+}

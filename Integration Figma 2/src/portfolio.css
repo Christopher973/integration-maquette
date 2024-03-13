@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    position: relative;
+    font-family: 'Work Sans';
+}
+
+header{
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: #74C69D;
+    align-items: center;
+    padding: 20px 135px;
+    position: sticky;
+    top: 0;
+}
+header .nav-logo{
+    display: flex;
+    align-items: center;
+}
+header .nav-logo h1{
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #fff;
+}
+header .navbar ul{
+    display: flex;
+}
+header .navbar li{
+    padding-left: 20px;
+    font-size: 20px;
+}
+header .navbar a{
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+header .navbar a::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 0;
+    height: 2.5px;
+    background-color: #fff;
+    transition: width 0.25s ease-out;
+}
+header .navbar a:hover::before{
+    content: "";
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+header .navbar a.active::before{
+    content: "";
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+header .menu{
+    display: none;
+}
+header .menu img{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.hero{
+    text-align: center;
+    margin-top: 30px;
+}
+.hero .title{
+    font-weight: 700;
+    font-size: 16px;
+    color: #74C69D;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.hero .subtitle{
+    padding: 16px 0;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Crimson Text';
+}
+.hero .content{
+    font-size: 17px;
+}
+
+.work{
+    margin-top: 62px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image img{
+    z-index: -12;
+    padding-right: 55px;
+    padding-bottom: 55px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.image img:hover{
+    transform: translateY(-20px);
+    transition: all .3s ease-in-out;
+} 
+
+.button{
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 120px;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.button:hover{
+    background: transparent;
+    color: #333;
+    transition: all .3s ease-in-out;
+}
+
+footer{
+    background: #74C69D;
+    margin-top: 54px;
+    padding: 40px 131px;
+    display: flex;
+    justify-content: space-between;
+}
+footer img{
+    padding-right: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+footer img:hover{
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+footer .right{
+    color: #fff;
+    font-size: 20px;
+}

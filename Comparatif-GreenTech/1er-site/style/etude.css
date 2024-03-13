@@ -1,0 +1,328 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: auto;
+	font-family: 'Noto Serif';
+	min-width: 880px;
+	max-width: 2500px;
+}
+main h1 {
+	color:#FAD24C;
+	font-size: 50px;
+	margin-top: 0;
+}
+main h3 {
+	color:#fff;
+	font-size: 30px;
+}
+main h1,h3 {
+	text-align: center;
+	padding: 20px;
+
+}
+
+main h1 {
+	font-size: 40px;
+	padding-top: 165px;
+}
+main h3 {
+	font-size: 30px;
+}
+
+main .accueil {
+	padding-top: 150px;
+	padding-bottom: 140px;
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/fonds/champs.webp);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+	text-align: center;
+}
+.accueil a {
+	text-decoration: none;
+	color: #fff;
+}
+main .accueil .button {
+	margin: 0;
+	padding: 25px;
+	background: transparent;
+	color: white;
+	border: 3px solid #FAD24C;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: 0.3s
+}
+main .accueil .button:hover {
+	background-color: #FAD24C;
+	transform: scale(1.1); 
+	transition: 0.3s
+	border:none ;
+}
+
+#histoire {
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/fonds/fond-bles.webp);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-bottom: 100px;
+}
+main .histoire-texte {
+	display: flex;
+	flex-wrap: column;
+	justify-content: space-around;
+	font-size: 20px;
+	color: #fff	;
+}
+.histoire-texte p {
+	text-align: justify;
+	margin: auto;
+}
+
+.histoire-texte img {
+	display: flex;
+	margin: auto;
+	margin-top: 20px;
+}
+#modele {
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/fonds/fond-raisain.webp);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-bottom: 100px;
+}
+main #modele img {
+	margin: 0 10px;
+}
+main .modele-texte {
+	text-align: justify;
+	color: #fff;
+}
+#modele h4 {
+	color: #FAD24C;
+	text-decoration: underline #FAD24C;
+	padding-top: 50px;
+	text-align: center;
+	font-size: 25px;	
+}
+main .modele-texte ol {
+	list-style: none;
+	font-size: 20px;
+}
+.modele-texte .button-jaune{
+	padding: 15px;
+	font-size: 17px;
+	transition: 0.2s;
+	background-color: #FAD24C;
+	text-decoration: none;
+	display: inline;
+	margin-left: 45%;
+	color: #000;
+	border-radius: 15px;
+}
+.modele-texte .button-jaune:hover{
+	background-color: #CAA24C;
+}
+main .modele-texte li h4 {
+	padding-bottom: 20px;
+	text-decoration: underline;
+}
+.au-milieu {
+	display: flex;
+	justify-content: space-around;
+	overflow-x: scroll;
+	margin: 10px;
+}
+main .modele-texte li {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#chaine {
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/fonds/fond-lol.webp);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-bottom: 150px;
+}
+main #chaine table, #diagnostic table {
+	text-align: center;
+	margin: auto;
+	font-size: 15px;
+	max-width: 60vw;
+}
+.chaine-texte table, #diagnostic table {
+	background-color: #000;
+}
+.chaine-texte table, .chaine-texte table td, .chaine-texte table tr,
+#diagnostic table, #diagnostic table td, #diagnostic table tr {
+	border-radius: 5px;
+}
+.chaine-texte table strong, #diagnostic table strong {
+	text-decoration: underline;
+}
+.chaine-texte table p, #diagnostic table p {
+	margin: 10px;
+}
+#diagnostic table {
+	color:  #000;
+}
+main #chaine td {
+	text-align: center;
+	/*border: 2px solid #D4D4D4;*/
+	color: #000;
+	/*border: 3px solid black;*/
+}
+.vert{
+	background-color: green;
+}
+.bleu-claire{
+	background-color: #5F9FFF;
+}
+.bleu-fonce{
+	background-color: #0048B3;
+}
+.violet{
+	background-color: #8F4B92;
+}
+.rose{
+	background-color: #CE00A2;
+}
+.orange{
+	background-color: #FF8700;
+}
+.gris-claire{
+	background-color: #B8B8B8;
+}
+.gris{
+	background-color: #9F9F9F;
+}
+.violet{
+	background-color: rbg(152, 11, 138);
+}
+.rouge{
+	background-color: #9F1616;
+}
+#diagnostic{
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/fonds/fond-champ.webp);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+	padding-bottom: 100px;
+}
+#diagnostic img{
+	width: 50%;
+	height: 50%;
+	margin-left: 25%;
+	/*transform: translateX(-50%);*/
+	z-index: 0;
+}
+#diagnostic{
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/fonds/fond-champ2.webp);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+	padding-bottom: 100px;
+}
+
+.comparaison{
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/fonds/fond-champ3.webp);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+	padding-bottom: 50px;
+}
+.comparaison ol li{
+	list-style: none;
+	text-align: justify;
+	padding-left: 400px;
+}
+.comparaison h3{
+	color: #FAD24C;
+}
+.jaune{
+	background-color: #FFD700;
+}
+.jaune-claire{
+	background-color: #DED400;
+}
+.vert-claire{
+	background-color: #00AD14;
+}
+.violet-claire{
+	background-color: #B45EB6;
+}
+.beige{
+	background-color: #EECE9E;
+}
+
+
+
+
+
+@media screen and (max-width: 800px){
+	html {
+		margin: 0;
+	}
+	main {
+		font-size: 1.5em;
+	}
+	.accueil{
+		padding-top: 150px;
+		padding-bottom: 140px;
+		background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/fonds/champs.jpeg);
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		color: white;
+		text-align: center;
+	}
+	#histoire h1{
+		font-size: 33px;
+	}
+
+	#histoire h3{
+		font-size: 23px;
+	}
+	#histoire p{
+		font-size: 20px;
+		text-align: justify;
+	}
+	#histoire img{
+		margin-left: 100px;
+	}
+	
+	#modele h1{
+		font-size: 33px;
+	}
+
+	#modele h3{
+		font-size: 23px;
+	}
+	#modele h4{
+		font-size: 22px;
+		/*margin-left: -400px;*/
+	}
+	#modele p{
+		font-size: 20px;
+		text-align: justify;
+		/*margin-left: -450px;*/
+	}
+	/*#modele img{
+		margin-left: 100px;
+	}*/
+	.chaine-texte p {
+		font-size: 1.2em;
+	}
+
+	#chaine h1{
+		font-size: 33px;
+	}
+	#chaine h3{
+		font-size: 23px;
+	}
+}

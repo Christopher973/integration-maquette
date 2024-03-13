@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="navlogo">
+            <img src="img/logo.png" alt="navbar image">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-icon">
+            <i class="fa-solid fa-bars open-icon" id="open-btn"></i>
+            <i class="fa-solid fa-xmark close-icon" id="close-btn"></i>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="hero-img"><img src="img/hero-image.png" alt="hero banner image"></div>
+            <div class="hero-content">
+                <div class="subtitle">Available</div>
+                <div class="title">Changes the game forever</div>
+                <div class="paragraph">
+                    <p>
+                        Quidam officiis similique sea ei, vel tollit indoctum
+                        efficiendi ei, at nihil tantas platonem eos. Mazim
+                        nemore singulis an ius, nullam ornatus nam ei.
+                    </p>
+                </div>
+                <div class="btn">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="left">
+                <div class="title">With more than 1000+ features included</div>
+                <div class="btn">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="grid">
+                    <div class="grid-box">
+                        <div class="grid-icon"><img src="img/Shape-icon.png" alt="features icon"></div>
+                        <div class="grid-title">Layouts</div>
+                        <div class="grid-paragraph">
+                            Quidam officiis similique sea ei, vel tollit indoctum efficiendi tantas platonem.
+                        </div>
+                    </div>
+                    <div class="grid-box">
+                        <div class="grid-icon"><img src="img/Shape-icon2.png" alt="featurces icon"></div>
+                        <div class="grid-title">Awards</div>
+                        <div class="grid-paragraph">
+                            Deseruisse definitionem his et, an has veri integre abhorreant, nam alii epicurei et.
+                        </div>
+                    </div>
+                    <div class="grid-box">
+                        <div class="grid-icon"><img src="img/Shape-icon3.png" alt="features icon"></div>
+                        <div class="grid-title">Cups of Coffee</div>
+                        <div class="grid-paragraph">
+                            Ea eos essent ornatus percipit, mea an persecuti pertinacia partiendo eu ius.
+                        </div>
+                    </div>
+                    <div class="grid-box">
+                        <div class="grid-icon"><img src="img/Shape-icon4.png" alt="features icon"></div>
+                        <div class="grid-title">Projects</div>
+                        <div class="grid-paragraph">
+                            Mea iisque mentitum signiferumque te, sed commune erroribus scripserit sea an.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script>
+    const openBtn = document.querySelector('#open-btn');
+    const openIcon = document.querySelector('.open-icon');
+    const closeBtn = document.querySelector('#close-btn');
+    const closeIcon = document.querySelector('.close-icon');
+    const navbar = document.querySelector('.navbar');
+
+    const preventScrollHandler = function (event) {
+        event.preventDefault();
+    };
+
+    openBtn.addEventListener('click', function () {
+        navbar.classList.toggle('active');
+        openIcon.style.display = "none";
+        closeIcon.style.display = "block";
+
+        document.addEventListener("wheel", preventScrollHandler, { passive: false });
+
+    });
+
+    closeBtn.addEventListener('click', function () {
+        navbar.classList.toggle('active');
+        openIcon.style.display = "block";
+        closeIcon.style.display = "none";
+
+        document.removeEventListener("wheel", preventScrollHandler);
+
+
+    });
+</script>
+
+</html>

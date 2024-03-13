@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Work Sans';
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #74C69D;
+    align-items: center;
+    padding: 20px 135px;
+    position: sticky;
+    top: 0;
+}
+header .nav-logo{
+    display: flex;
+    align-items: center;
+}
+header .nav-logo h1{
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #fff;
+}
+header .navbar ul{
+    display: flex;
+}
+header .navbar li{
+    padding-left: 20px;
+    font-size: 20px;
+}
+header .navbar a{
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+header .navbar a::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 0;
+    height: 2.5px;
+    background-color: #fff;
+    transition: width 0.25s ease-out;
+}
+header .navbar a:hover::before{
+    content: "";
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+header .navbar a.active::before{
+    content: "";
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+header .menu{
+    display: none;
+}
+header .menu img{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.hero{
+    text-align: center;
+}
+.hero .title{
+    font-family: 'Crimson Text';
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+.hero .content{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 67px;
+}
+.formulaire{
+    display: flex;
+    padding: 0 130px;
+    justify-content: center;
+}
+.formulaire form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.formulaire .identite{
+    width: 575px;
+    height: 28px;
+    background: #EEEEEE;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 16px 0;
+    padding: 0 20px;
+}
+.formulaire .message{
+    margin: 16px 0;
+    height: 75px;
+    padding: 0 20px;
+
+    background: #EEEEEE;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+.formulaire .submit{
+    height: 48px;
+    color: #fff;
+    background-color: #000000;
+    border: 2px solid #000;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.formulaire .submit:hover{
+    background: transparent;
+    transition: all .3s ease-in-out;
+    color: #000;
+}
+
+footer{
+    background: #74C69D;
+    margin-top: 54px;
+    padding: 40px 131px;
+    display: flex;
+    justify-content: space-between;
+}
+footer img{
+    padding-right: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+footer img:hover{
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+footer .right{
+    color: #fff;
+    font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+    .formulaire{
+        align-items: center;
+    }
+    .formulaire .left input{
+        width: 400px;
+    }
+    .formulaire .message{
+        width: px;
+    }
+    .formulaire .right img{
+        width: 400px;
+    }
+}

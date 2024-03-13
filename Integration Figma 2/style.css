@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Work Sans';
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #74C69D;
+    align-items: center;
+    padding: 20px 135px;
+    position: sticky;
+    top: 0;
+}
+header .nav-logo{
+    display: flex;
+    align-items: center;
+}
+header .nav-logo h1{
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #fff;
+}
+header .navbar ul{
+    display: flex;
+}
+header .navbar li{
+    padding-left: 20px;
+    font-size: 20px;
+}
+header .navbar a{
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+header .navbar a::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 0;
+    height: 2.5px;
+    background-color: #fff;
+    transition: width 0.25s ease-out;
+}
+header .navbar a:hover::before{
+    content: "";
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+header .navbar a.active::before{
+    content: "";
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+header .menu{
+    display: none;
+}
+header .menu img{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.hero{
+    background-color: #74C69D;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 135px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.hero .left{
+    width: 430px;
+}
+.hero .title{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    color: #fff;
+}
+.hero .subtitle{
+    padding-top: 15px;
+    font-family: 'Crimson Text';
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+}
+.hero .content{
+    color: rgba(255, 255, 255, 0.75);
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.hero .button{
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    width: 120px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    transition: all .3s ease-in-out;
+}
+.hero .button:hover{
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    color: #fff;
+}
+
+.partner{
+    padding-top: 60px;
+    text-align: center;
+}
+.partner .title{
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #74C69D;
+    padding-bottom: 15px;
+}
+.partner .subtitle{
+    font-family: 'Crimson Text';
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+.partner .content{
+    font-size: 20px;
+    padding-bottom: 55px;
+}
+.partner .images img{
+    padding-right: 60px;
+    padding-bottom: 55px;
+}
+.partner .arrow{
+    padding-bottom: 20px;
+}
+.partner .button{
+    margin: auto;
+}
+
+.btn{
+    background: #212529;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #000;
+    width: 120px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.btn:hover{
+    background: transparent;
+    color: #000;
+    transition: all .3s ease-in-out;
+}
+
+.work{
+    padding: 0 135px;
+    margin-top: 10px;
+}
+.work .section1, .section2{
+    display: flex;
+    align-items: center;
+}
+.work .title{
+    color: #212529;
+    font-family: 'Crimson Text';
+    font-weight: 700;
+    font-size: 42px;
+}
+.work .section1 img{
+    padding-right: 110px;
+}
+.work .section2 img{
+    padding-left: 110px;
+}
+.work .content{
+    color: rgba(33, 37, 41, 0.5);
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+.work .section2{
+    padding-top: 79px;
+}
+
+.team{
+    padding-top: 96px;
+    text-align: center;
+}
+.team .title{
+    color: #74C69D;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
+.team .subtitle{
+    color: #212529;
+    font-family: 'Crimson Text';
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 16px;
+}
+.team .content{
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 45px;
+}
+.team .carousel{
+    display: flex;
+    justify-content: center;
+}
+.team .card{
+    width: 252px;
+    height: 260px;
+    margin-right: 45px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    box-shadow: 6px 9px 23px -4px rgba(0,0,0,0.47);
+    transition: all .3s ease-in-out;
+}
+.team .card:hover{
+    transform: translateY(-20px);
+    transition: all .3s ease-in-out;
+}
+.team .card .name{
+    padding-top: 19px;
+    text-align: left;
+    padding-left: 38px;
+    font-weight: 700;
+    font-size: 17px;
+}
+.team .card .job{
+    padding-top: 19px;
+    text-align: left;
+    padding-left: 38px;
+}
+.team .button{
+    margin: auto;
+    margin-top: 45px;
+}
+
+footer{
+    background: #74C69D;
+    margin-top: 54px;
+    padding: 40px 131px;
+    display: flex;
+    justify-content: space-between;
+}
+footer img{
+    padding-right: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+footer img:hover{
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+footer .right{
+    color: #fff;
+    font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+    .hero{
+        padding: 70px 90px;
+    }
+    .hero .subtitle{
+        font-size: 35px;
+    }
+    .hero .content{
+        font-size: 15px;
+    }
+    .hero .button{
+        padding: 10px;
+        font-size: 19px;
+    }
+    .hero img{
+        width: 500px;
+    }
+
+    .btn{
+        padding: 15px;
+        font-size: 19px;
+    }
+
+    .work{
+        padding: 0;
+        margin-top: 30px;
+    }
+    .work .title{
+        font-size: 35px;
+    }
+    .work .content{
+        font-size: 15px;
+    }
+    .work img{
+        width: 470px;
+    }
+    .work .section1{
+        padding-right: 30px;
+        padding-left: 50px;
+    }
+    .work .section2{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .team .carousel{
+        margin-left: 30px;
+    }
+}
