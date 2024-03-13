@@ -6,8 +6,8 @@ Ce répertoire contient l'ensemble des maquettes Figma que j'ai intégrées dans
 
 - [Comparatif-GreenTech](https://christopher973.github.io/integration-maquette//Comparatif-GreenTech)
   - [Premier site](https://christopher973.github.io/integration-maquette//Comparatif-GreenTech/1er-site)
-  - [Deuxième site](https://christopher973.github.io/integration-maquette//2eme-site)
-- [Design 1](https://christopher973.github.io/integration-maquette//Design%201)
+  - [Deuxième site](https://christopher973.github.io/integration-maquette/2eme-site)
+- [Design 1](https://christopher973.github.io/integration-maquette//Design1)
 - [Integration Figma 1](https://christopher973.github.io/integration-maquette//Integration%20Figma%201)
 - [Integration Figma 2](https://christopher973.github.io/integration-maquette//Integration%20Figma%202)
 - [Landing page 1](https://christopher973.github.io/integration-maquette//Landing%20page%201)
@@ -16,4 +16,4 @@ Ce répertoire contient l'ensemble des maquettes Figma que j'ai intégrées dans
 - [Landing page 5](https://christopher973.github.io/integration-maquette//Landing%20page%205)
 - [Landing page 6](https://christopher973.github.io/integration-maquette//Landing%20page%206)
 - [Landing page 7](https://christopher973.github.io/integration-maquette//Landing%20page%207)
-- [Responsive-design](https://christopher973.github.io/integration-maquette//)
+- [Responsive-design](https://christopher973.github.io/integration-maquette/Responsive-design)
