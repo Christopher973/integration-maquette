@@ -17,5 +17,5 @@ Ce répertoire contient l'ensemble des maquettes Figma que j'ai intégrées dans
 - [Landing page 6](https://christopher973.github.io/integration-maquette/Landing%20page%206)
 - [Landing page 7](https://christopher973.github.io/integration-maquette/Landing%20page%207)
 - [Responsive-design](https://christopher973.github.io/integration-maquette/Responsive-design)
-- [E-commerce kit](https://christopher973.github.io/integration-maquette/E-commerce%20kit)
+- [E-commerce kit](https://christopher973.github.io/integration-maquette/e-commerce%20kit)
 
